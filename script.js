@@ -10,13 +10,13 @@ btn.addEventListener('click', function(){
     if (bmi<18.5) {
         interpretation=", so you are underweight.";
     }
-    if(bmi>=18.5&&bmi<25){
+    else if(bmi>=18.5&&bmi<25){
         interpretation=", so you have a normal weight."
     }
-    if(bmi>=25&&bmi<30){
+    else if(bmi>=25&&bmi<30){
         interpretation=", so you are overweight."
     }
-    if(bmi>=30)
+    else 
         interpretation=", so you are obese."
     document.getElementById('bmires').value = "Your BMI is " +Math.floor(bmi) +interpretation;
 })
